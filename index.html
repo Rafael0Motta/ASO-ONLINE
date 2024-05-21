@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/logoAso.png" type="image/x-icon">
+
+    <!-- WPP BUTTON -->
+    <link rel="stylesheet"
+        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <a id="robbu-whatsapp-button" class="left" target="_blank" href="https://api.whatsapp.com/send?phone=5521980870029">
+        <div class="rwb-tooltip">🚀 Estamos no WhatsApp</div>
+        <img alt="whatsapp-icon"
+            src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ASO ONLINE</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navLogoContainer">
+                <a href="/"><img src="./assets/LogoAsoNav.png" alt="Logo ASO Online">
+                    <p>ASO ONLINE</p>
+                </a>
+            </div>
+            <!-- MENU MOBILE -->
+            <ul class="navItensContainerMobile">
+                <li onclick=hideSidebar() id="navCloseButton">
+                    <a href="#">
+                        <img src="./Assets/IMGS/closeIconHamburguerMenu.svg" alt="Icon Hamburguer Menu">
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="showOnMobile">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="showOnMobile">Diferencial</a>
+                </li>
+                <li>
+                    <a href="#" class="showOnMobile">Planos</a>
+                </li>
+                <li>
+                    <a href="#" class="showOnMobile">Contato</a>
+                </li>
+                <li>
+                    <a href="#" id="contactButtonMobile">Acesso a Plataforma</a>
+                </li>
+            </ul>
+            <!-- MENU DESKTOP -->
+            <ul class="navItensContainerDesktop">
+                <li>
+                    <a href="/" class="showOnDesktop">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="showOnDesktop">Diferencial</a>
+                </li>
+                <li>
+                    <a href="#" class="showOnDesktop">Planos</a>
+                </li>
+                <li>
+                    <a href="#" class="showOnDesktop">Contato</a>
+                </li>
+                <li>
+                    <a href="#" id="contactButton">Acesso a Plataforma</a>
+                </li>
+                <li onclick=showSidebar() class="menuCloseButtonMobile">
+                    <a href="#">
+                        <img src="./Assets/IMGS/IconHamburguerMenu.svg" alt="Icon Hamburguer Menu">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    
+    
+    
+    <a href="#" id="topBtn" class="top"></a>
+</body>
+<script src="./index.js"></script>
+
+</html>
