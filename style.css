@@ -6,11 +6,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-:root {
-    /* SHADOWS */
-    --shadow0-2: rgba(0, 0, 0, 0.2);
-    --shadowWhite1: rgba(255, 255, 255, 0.90);
-}
 
 /* SCROLL BUTTON */
 
@@ -20,10 +15,9 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    visibility: hidden;
     width: 45px;
     aspect-ratio: 1;
-    background: #EFB225;
+    background: #10477F;
     border-radius: 10px;
 }
 
@@ -98,12 +92,12 @@ nav li:first-child {
 }
 
 #contactButton, #contactButtonMobile {
-    background-color: #18BFED;
+    background-color: #4fd2c2;
     padding: 10px;
     border-radius: 10px;
     font-size: 17px;
     font-weight: 500;
-    color: #000;
+    color: #10477F;
     text-decoration: none;
 }
 
@@ -119,9 +113,9 @@ nav li:first-child {
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: var(--shadowWhite1);
+    background-color: rgba(255, 255, 255, 0.90);
     backdrop-filter: blur(15px);
-    box-shadow: -10px 0 10px var(--shadow0-2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -152,10 +146,10 @@ nav li:first-child {
     gap: 30px;
     align-items: center;
     padding: 20px 0;
-    background: #f5f5f5;
+    background: #e7e7e79c;
 }
 
-.text {
+.homeText {
     text-align: justify;
     width: 35%;
     display: flex;
@@ -163,28 +157,28 @@ nav li:first-child {
     gap: 15px;
 }
 
-.title {
+.homeTitle {
     color: #000;
     font-size: 31px;
     line-height: 45px;
     font-weight: normal;
 }
 
-.subtitle, .contentText {
+.homeSubtitle, .homeContentText {
     color: #999;
     font-size: 15px;
     font-weight: normal;
-    line-height: 1.625;
+    line-height: 25px;
 }
 
-.buttons {
+.homeButtons {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 25px;
 }
 
-.buttons a {
+.homeButtons a {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -197,23 +191,159 @@ nav li:first-child {
     text-align: justify;
 }
 
-.buttons a>i {
+.homeButtons a>i {
     font-size: 25px;
 }
 
-.buttonSistema {
+.homeButtonSistema {
     background: #4fd2c2;
 }
 
-.buttonContato {
+.homeButtonContato {
     background: #6562a7;
 }
 
-.image>img {
+.homeImage>img {
     width: 100%;
 }
 
+
+/* SECTION ABOUT */
+
+#about {
+    padding: 50px;
+    display: flex;
+}
+
+.aboutText h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #111;
+    font-weight: 400;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.aboutText p {
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 760px;
+    text-align: justify;
+    line-height: 25px;
+    color: #999;
+    padding: 25px;
+}
+
+/* CARDS */
+
+#aboutCardContainer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.aboutCard {
+    max-width: 300px;
+    background-color: #4fd2c2;
+    max-height: 660px;
+}
+
+.aboutCard a {
+    text-decoration: none
+}
+
+.aboutCardContent {
+    padding: 15px;
+}
+
+.aboutCardImage {
+    object-fit: cover;
+    width: 100%;
+}
+
+.aboutCardTitle {
+    color: #fff;
+    font-size: 22px;
+    line-height: 25px;
+    height: 45px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.aboutCardDesc {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.aboutCardList {
+    color: #fff;
+    margin: 0px 0px 0 15px;
+    font-size: 15px;
+}
+
+.aboutCardListItem {
+    margin-bottom: 10px;
+}
+
+#aboutCardSearch {
+    background-color: #4fd2c2;
+    border-radius: 10px 0 0 10px;
+}
+
+#aboutCardSearch img {
+    border-radius: 10px 0 0 0;
+}
+
+#aboutCardGeneration {
+    background: #6562a7;
+}
+
+#aboutCardDocs {
+    background: #ff3366;
+}
+
+#aboutCardAgility {
+    background: #d667cd;
+    border-radius: 0 10px 10px 0;
+}
+
+#aboutCardAgility img {
+    border-radius: 0 10px 0 0;
+}
+
 /* RESPONSIBILITY */
+
+@media (max-width: 1300px) {
+    #cardContainer {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 1290px) {
+
+    #aboutCardDocs, #aboutCardDocs img {
+        background: #ff3366;
+        border-radius: 0 10px 10px 0;
+    }
+
+    #aboutCardDocs img {
+        border-radius: 0 10px 0 0;
+    }
+
+    #aboutCardAgility, #aboutCardAgility img {
+        background: #d667cd;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #aboutCardAgility img {
+        border-radius: 0;
+    }
+}
+
 
 @media (max-width: 1050px) {
     /* NAV */
@@ -240,9 +370,50 @@ nav li:first-child {
         flex-direction: column;
     }
 
-    .text {
+    .homeText {
         margin: 30px 0 0;
         width: 85%;
+    }
+
+    /* ABOUT CARDS */
+
+    #aboutCardSearch {
+        border-radius: 10px 0 0 0;
+    }
+
+    #aboutCardGeneration {
+        border-radius: 0 10px 0 0;
+    }
+
+    #aboutCardGeneration img {
+        border-radius: 0 10px 0 0;
+    }
+
+    #aboutCardDocs {
+        border-radius: 0 0 0 10px;
+    }
+
+    #aboutCardAgility {
+        border-radius: 0 0 10px 0;
+    }
+
+    #aboutCardAgility img, #aboutCardDocs img {
+        border-radius: 0;
+    }
+}
+
+
+@media (max-width: 720px) {
+    #aboutCardSearch, #aboutCardSearch img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #aboutCardDocs, #aboutCardDocs img, #aboutCardAgility img, #aboutCardGeneration, #aboutCardGeneration img {
+        border-radius: 0;
+    }
+
+    #aboutCardAgility {
+        border-radius: 0 0 10px 10px;
     }
 }
 
