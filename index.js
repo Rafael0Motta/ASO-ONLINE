@@ -20,7 +20,7 @@ function hideSidebar() {
 }
 
 /* ABOUT CARDS */
-const contentText = [
+const aboutContent = [
   {
     id: "aboutCardSearch",
     image: "./assets/IMGS/info1.jpg",
@@ -76,7 +76,7 @@ const contentText = [
 ];
 
 const aboutSection = document.getElementById("aboutCardContainer");
-contentText.forEach((data) => {
+aboutContent.forEach((data) => {
   const card = document.createElement("div");
   card.classList.add("aboutCard");
   card.setAttribute("id", data.id);
@@ -119,4 +119,84 @@ contentText.forEach((data) => {
   card.appendChild(content);
 
   aboutSection.appendChild(card);
+});
+
+/* FUNCTIONALITIES CARDS */
+const functionalitiesCards = [
+  {
+    icon: `fa-solid fa-cloud`,
+    title: `Simplicidade de uso`,
+    text: `Desfrute de um número ilimitado de cadastros de usuários na plataforma, em um plano financeiro
+    acessível e sem obrigações de fidelização. Priorizamos a simplicidade e a transparência em
+    nossos serviços, garantindo uma experiência sem complicações.`,
+  },
+  {
+    icon: `fa-solid fa-user-plus`,
+    title: `Usuários ilimitados`,
+    text: `Aproveite a vantagem de cadastrar um número ilimitado de usuários em nossa plataforma. Oferecemos
+    isso dentro de um plano financeiro acessível e sem a necessidade de fidelização. Valorizamos a
+    simplicidade e a transparência em todos os nossos serviços, garantindo uma experiência sem
+    complicações.`,
+  },
+  {
+    icon: `fa-solid fa-magnifying-glass`,
+    title: `Personalização para suas Necessidades`,
+    text: `>Acompanhe o que precisar com perfis de usuários personalizados, adaptados às necessidades de cada
+    um. Garantimos que apenas as informações relevantes serão exibidas para cada usuário,
+    proporcionando uma experiência sob medida.`,
+  },
+  {
+    icon: `fa-solid fa-mobile-screen`,
+    title: `Flexibilidade de Escolha`,
+    text: `Oferecemos total liberdade aos nossos clientes. Eles podem realizar a documentação com seus
+    próprios profissionais ou contratar uma empresa de consultoria. O ASO ONLINE também possui
+    parcerias com empresas registradas no sistema, prontas para oferecer serviços especializados no
+    mercado de Segurança do Trabalho.`,
+  },
+  {
+    icon: `fa-solid fa-earth-americas`,
+    title: `Plataforma Sempre Atualizada`,
+    text: `Nosso compromisso é manter nossa plataforma sempre atualizada, atendendo às normas
+    regulamentadoras de SST. Nossa equipe realiza atualizações periódicas automaticamente,
+    garantindo acesso às melhorias mais recentes. Constantemente buscamos aprimorar a plataforma com
+    base em nossa experiência e nas sugestões valiosas dos clientes.`,
+  },
+  {
+    icon: `fa-solid fa-lock`,
+    title: `Ambiente seguro`,
+    text: `O ASO ONLINE oferece um ambiente seguro para seus dados, com certificações Confea-Crea e ISO,
+    garantindo altos padrões de segurança da informação. Investimos continuamente na confiabilidade
+    do sistema e nossa equipe de suporte segue uma rigorosa Cartilha de Segurança da Informação para
+    assegurar estabilidade e confiança digital.`,
+  },
+];
+
+const functionalitiesSection = document.getElementById(
+  "functionalitiesSection"
+);
+
+functionalitiesCards.forEach((data) => {
+  const functionalitiesCards = document.createElement("div");
+  functionalitiesCards.classList.add("functionalitiesCards");
+
+  const icon = document.createElement("span");
+  icon.innerHTML = `<i class="${data.icon}"></i>`;
+
+  const cardFunctiTitle = document.createElement("h2");
+  cardFunctiTitle.classList.add("cardFunctiTitle");
+  cardFunctiTitle.innerHTML = data.title;
+
+  functionalitiesCards.appendChild(icon);
+  functionalitiesCards.appendChild(cardFunctiTitle);
+
+  const cardFunctiText = document.createElement("div");
+  cardFunctiText.classList.add("cardFunctiText");
+
+  const paragraph = document.createElement("p");
+  paragraph.innerHTML = data.text;
+
+  functionalitiesCards.appendChild(cardFunctiText);
+  cardFunctiText.appendChild(paragraph);
+
+  functionalitiesSection.appendChild(functionalitiesCards);
 });

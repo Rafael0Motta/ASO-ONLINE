@@ -195,11 +195,15 @@ nav li:first-child {
     font-size: 25px;
 }
 
-.homeButtonSistema {
+.homeButtons a>p>span {
+    font-weight: 500;
+}
+
+#homeButtonSistema {
     background: #4fd2c2;
 }
 
-.homeButtonContato {
+#homeButtonContato {
     background: #6562a7;
 }
 
@@ -228,7 +232,7 @@ nav li:first-child {
 .aboutText p {
     margin: 0 auto;
     font-size: 16px;
-    max-width: 760px;
+    max-width: 1000px;
     text-align: justify;
     line-height: 25px;
     color: #999;
@@ -313,6 +317,45 @@ nav li:first-child {
 
 #aboutCardAgility img {
     border-radius: 0 10px 0 0;
+}
+
+/* SECTION FUNCTIONALITIES */
+
+.functionalities {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+
+.functionalitiesCards {
+    width: 380px;
+    padding: 40px 35px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.functionalitiesCards i {
+    color: #55d3c4;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cardFunctiTitle {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    line-height: 15px;
+}
+
+.cardFunctiText {
+    height: 120px;
+    text-align: justify;
+    color: #999;
+    font-size: 14px;
 }
 
 /* RESPONSIBILITY */
