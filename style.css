@@ -6,7 +6,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-
 /* SCROLL BUTTON */
 
 .top {
@@ -32,6 +31,16 @@
     transform: translateY(20%) rotate(-45deg);
     border-top: 5px solid #FFFFFF;
     border-right: 5px solid #FFFFFF;
+}
+
+/* WPP BUTTON */
+
+#robbu-whatsapp-button.left {
+    z-index: 1;
+}
+
+.accordion-button:focus {
+    z-index: 0 !important;
 }
 
 /* NAV */
@@ -195,6 +204,12 @@ nav li:first-child {
     font-size: 25px;
 }
 
+
+.homeButtons a>p {
+    margin: 0;
+}
+
+
 .homeButtons a>p>span {
     font-weight: 500;
 }
@@ -321,7 +336,17 @@ nav li:first-child {
 
 /* SECTION FUNCTIONALITIES */
 
-.functionalities {
+.functioTitle h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #111;
+    font-weight: 400;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#functionalitiesSection {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -331,9 +356,9 @@ nav li:first-child {
 
 .functionalitiesCards {
     width: 380px;
-    padding: 40px 35px;
+    padding: 30px 35px 65px;
     text-align: center;
-    background: #f8f8f8;
+    background: #e7e7e79c;
 }
 
 .functionalitiesCards i {
@@ -356,6 +381,30 @@ nav li:first-child {
     text-align: justify;
     color: #999;
     font-size: 14px;
+}
+
+/* SECTION PLATAFORMA */
+
+.plataformaSection {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.plataformContent {
+    width: 50%;
+}
+
+#accordionFlushExample {
+    --bs-accordion-bg: #4fd2c2;
+    --bs-accordion-color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
 }
 
 /* RESPONSIBILITY */
@@ -443,8 +492,18 @@ nav li:first-child {
     #aboutCardAgility img, #aboutCardDocs img {
         border-radius: 0;
     }
+
+    .plataformContent {
+        width: 100%;
+    }
+
 }
 
+@media screen and (max-width:768px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 720px) {
     #aboutCardSearch, #aboutCardSearch img {
@@ -476,5 +535,9 @@ nav li:first-child {
 
     .navItensContainerDesktop {
         gap: 0;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
     }
 }

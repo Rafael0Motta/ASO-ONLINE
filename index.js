@@ -69,9 +69,9 @@ const aboutContent = [
     ul: [
       "Conformidade legal automatizada: A legislação é integrada ao sistema, garantindo que as obrigações legais sejam seguidas de forma precisa e eficiente.",
       "Economia de tempo: Evite a perda de tempo na busca por dados, prazos e valores. Tudo é organizado e acessível com apenas alguns cliques.",
-      "Tranquilidade e segurança: Os usuários podem ficar tranquilos sabendo que estão cumprindo suas responsabilidades legais de forma confiável. Os documentos são gerados rapidamente, de maneira segura e armazenados em nosso servidor para fácil acesso e referência futura.",
+      "Tranquilidade e segurança: Os usuários podem ficar tranquilos sabendo que estão cumprindo suas responsabilidades legais.",
     ],
-    p2: ``,
+    p2: ` `,
   },
 ];
 
@@ -200,3 +200,6 @@ functionalitiesCards.forEach((data) => {
 
   functionalitiesSection.appendChild(functionalitiesCards);
 });
+
+/* SECTION PLATAFORMA */
+
