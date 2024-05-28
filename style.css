@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,9 @@
     font-family: "Roboto", sans-serif;
 }
 
-/* SCROLL BUTTON */
-
+/* Scroll Button */
 .top {
     --offset: 50px;
-
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -33,18 +32,17 @@
     border-right: 5px solid #FFFFFF;
 }
 
-/* WPP BUTTON */
-
+/* WhatsApp Button */
 #robbu-whatsapp-button.left {
     z-index: 1;
 }
 
+/* Accordion */
 .accordion-button:focus {
     z-index: 0 !important;
 }
 
-/* NAV */
-
+/* Navigation */
 nav {
     display: flex;
     align-items: center;
@@ -53,8 +51,6 @@ nav {
     box-shadow: 0 3px 1px #ebebeb;
     background: #fff;
 }
-
-/* NAV LOGO */
 
 .navLogoContainer a {
     display: flex;
@@ -68,12 +64,11 @@ nav {
 
 .navLogoContainer a>p {
     font-size: 22px;
+    margin: 0;
     font-weight: 700;
     letter-spacing: 2px;
     color: #10477F;
 }
-
-/* NAV ITENS */
 
 nav ul {
     list-style: none;
@@ -87,6 +82,7 @@ nav li:first-child {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin: 0;
 }
 
 .showOnDesktop, .showOnMobile {
@@ -114,8 +110,7 @@ nav li:first-child {
     opacity: 0.8;
 }
 
-/* MOBILE */
-
+/* Mobile Navigation */
 .navItensContainerMobile {
     position: fixed;
     top: 0;
@@ -130,24 +125,30 @@ nav li:first-child {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 40px;
+    z-index: 2;
 }
 
 .navItensContainerMobile li {
     width: 100%;
-    margin: 0 30px;
 }
 
 #navCloseButton {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 -30px;
+    border: none;
+    background: transparent;
 }
 
 .menuCloseButtonMobile {
     display: none;
 }
 
-/* MAIN */
+.menuCloseButtonMobile button {
+    border: none;
+    background: transparent;
+}
 
-/* SECTION HOME */
+/* Main Content */
+/* Home Section */
 
 .home {
     display: flex;
@@ -183,8 +184,10 @@ nav li:first-child {
 .homeButtons {
     display: flex;
     align-items: center;
+    gap: 30px;
     justify-content: space-around;
     margin-top: 25px;
+    flex-wrap: wrap;
 }
 
 .homeButtons a {
@@ -192,7 +195,7 @@ nav li:first-child {
     align-items: center;
     gap: 20px;
     text-decoration: none;
-    padding: 10px 20px 10px;
+    padding: 10px 20px;
     max-width: 180px;
     font-size: 13px;
     border-radius: 10px;
@@ -200,17 +203,15 @@ nav li:first-child {
     text-align: justify;
 }
 
-.homeButtons a>i {
+.homeButtons a i {
     font-size: 25px;
 }
 
-
-.homeButtons a>p {
+.homeButtons a p {
     margin: 0;
 }
 
-
-.homeButtons a>p>span {
+.homeButtons a p span {
     font-weight: 500;
 }
 
@@ -222,13 +223,11 @@ nav li:first-child {
     background: #6562a7;
 }
 
-.homeImage>img {
+.homeImage img {
     width: 100%;
 }
 
-
-/* SECTION ABOUT */
-
+/* About Section */
 #about {
     padding: 50px;
     display: flex;
@@ -254,8 +253,7 @@ nav li:first-child {
     padding: 25px;
 }
 
-/* CARDS */
-
+/* Cards */
 #aboutCardContainer {
     display: flex;
     justify-content: center;
@@ -270,7 +268,7 @@ nav li:first-child {
 }
 
 .aboutCard a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .aboutCardContent {
@@ -300,7 +298,7 @@ nav li:first-child {
 
 .aboutCardList {
     color: #fff;
-    margin: 0px 0px 0 15px;
+    margin: 0 0 0 15px;
     font-size: 15px;
 }
 
@@ -334,8 +332,7 @@ nav li:first-child {
     border-radius: 0 10px 0 0;
 }
 
-/* SECTION FUNCTIONALITIES */
-
+/* Functionalities Section */
 .functioTitle h2 {
     text-transform: uppercase;
     font-size: 36px;
@@ -383,12 +380,11 @@ nav li:first-child {
     font-size: 14px;
 }
 
-/* SECTION PLATAFORMA */
-
+/* Plataforma Section */
 .plataformaSection {
     display: flex;
     align-items: center;
-    padding: 30px 40px;
+    padding: 30px 40px 0;
     justify-content: space-around;
     gap: 50px;
     flex-wrap: wrap;
@@ -407,8 +403,89 @@ nav li:first-child {
     box-shadow: none !important;
 }
 
-/* RESPONSIBILITY */
+/* FOOTER */
 
+footer {
+    background: rgb(79, 210, 194);
+    padding: 50px 75px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footerText {
+    width: 600px;
+    color: #fff;
+}
+
+.footerText span {
+    font-size: 13px;
+}
+
+.footerText h2 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 400px;
+}
+
+.footer p {
+    font-size: 17px;
+}
+
+form {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nameEmail {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    outline: none;
+}
+
+.messageSub {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.messageSub textarea {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+}
+
+.messageSub button {
+    z-index: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.messageSub button:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries */
 @media (max-width: 1300px) {
     #cardContainer {
         padding: 50px 30px;
@@ -416,7 +493,6 @@ nav li:first-child {
 }
 
 @media (max-width: 1290px) {
-
     #aboutCardDocs, #aboutCardDocs img {
         background: #ff3366;
         border-radius: 0 10px 10px 0;
@@ -436,10 +512,21 @@ nav li:first-child {
     }
 }
 
+@media (max-width: 1290px) {
+    /* FOOTER */
+
+    footer {
+        gap: 10px;
+    }
+
+    .footerText h2 {
+        width: 100%;
+    }
+
+}
+
 
 @media (max-width: 1050px) {
-    /* NAV */
-
     nav {
         justify-content: space-between;
     }
@@ -450,24 +537,18 @@ nav li:first-child {
 
     .menuCloseButtonMobile {
         margin-left: 20px;
-    }
-
-    .menuCloseButtonMobile {
         display: block;
     }
 
-    /* SECTION HOME */
-
     .home {
         flex-direction: column;
+        padding: 20px 0 0;
     }
 
     .homeText {
         margin: 30px 0 0;
         width: 85%;
     }
-
-    /* ABOUT CARDS */
 
     #aboutCardSearch {
         border-radius: 10px 0 0 0;
@@ -496,13 +577,25 @@ nav li:first-child {
     .plataformContent {
         width: 100%;
     }
-
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .nameEmail, .messageSub, .nameEmail input, .messageSub textarea {
+        width: 100%;
+    }
+
+    .messageSub button {
+        margin: auto;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 720px) {
@@ -520,16 +613,15 @@ nav li:first-child {
 }
 
 @media (max-width: 600px) {
-
     nav {
         padding: 15px;
     }
 
-    .navLogoContainer a>p {
+    .navLogoContainer a p {
         font-size: 20px;
     }
 
-    .navLogoContainer a>img {
+    .navLogoContainer a img {
         width: 80px;
     }
 
@@ -540,4 +632,33 @@ nav li:first-child {
     .wrapper {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width:490px) {
+    .aboutCardContent {
+        padding: 15px 0;
+    }
+
+    .aboutCardList {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .aboutCardListItem, .aboutCardDesc {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .functionalitiesCards {
+        height: 400px;
+    }
+
+    footer {
+        padding: 50px 25px;
+    }
+
+    .messageSub button {
+        margin: 20px auto;
+    }
+
 }

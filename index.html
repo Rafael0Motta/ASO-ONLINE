@@ -30,7 +30,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
 
-
     <title>ASO ONLINE</title>
 </head>
 
@@ -38,66 +37,68 @@
     <header>
         <nav>
             <div class="navLogoContainer">
-                <a href="/"><img src="./assets/LogoAsoNav.png" alt="Logo ASO Online">
+                <a href="/">
+                    <img src="./assets/LogoAsoNav.png" alt="Logo ASO Online">
                     <p>ASO ONLINE</p>
                 </a>
             </div>
             <!-- MENU MOBILE -->
             <ul class="navItensContainerMobile">
-                <li onclick=hideSidebar() id="navCloseButton">
-                    <a href="#">
+                <li>
+                    <button onclick="hideSidebar()" id="navCloseButton" aria-label="Fechar Menu">
                         <img src="./Assets/IMGS/closeIconHamburguerMenu.svg" alt="Icon Hamburguer Menu">
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="/" class="showOnMobile">Sobre</a>
+                    <a href="#homeID" class="showOnMobile">Sobre</a>
                 </li>
                 <li>
-                    <a href="#" class="showOnMobile">Diferencial</a>
+                    <a href="#functionalitiesID" class="showOnMobile">Diferencial</a>
                 </li>
                 <li>
-                    <a href="#" class="showOnMobile">Planos</a>
+                    <a href="#pricesID" class="showOnMobile">Planos</a>
                 </li>
                 <li>
-                    <a href="#" class="showOnMobile">Contato</a>
+                    <a href="#contactID" class="showOnMobile">Contato</a>
                 </li>
                 <li>
-                    <a href="#" id="contactButtonMobile">Acesso a Plataforma</a>
+                    <a href="https://asoonline.com.br/sistema/hub.asp" target="_blank" id="contactButtonMobile">Acesso a
+                        Plataforma</a>
                 </li>
             </ul>
             <!-- MENU DESKTOP -->
             <ul class="navItensContainerDesktop">
                 <li>
-                    <a href="/" class="showOnDesktop">Sobre</a>
+                    <a href="#homeID" class="showOnDesktop">Sobre</a>
                 </li>
                 <li>
-                    <a href="#" class="showOnDesktop">Diferencial</a>
+                    <a href="#functionalitiesID" class="showOnDesktop">Diferencial</a>
                 </li>
                 <li>
-                    <a href="#" class="showOnDesktop">Planos</a>
+                    <a href="#pricesID" class="showOnDesktop">Planos</a>
                 </li>
                 <li>
-                    <a href="#" class="showOnDesktop">Contato</a>
+                    <a href="#contactID" class="showOnDesktop">Contato</a>
                 </li>
                 <li>
-                    <a href="#" id="contactButton">Acesso a Plataforma</a>
+                    <a href="https://asoonline.com.br/sistema/hub.asp" target="_blank" id="contactButton">Acesso a
+                        Plataforma</a>
                 </li>
-                <li onclick=showSidebar() class="menuCloseButtonMobile">
-                    <a href="#">
+                <li class="menuCloseButtonMobile">
+                    <button onclick="showSidebar()" aria-label="Abrir Menu">
                         <img src="./Assets/IMGS/IconHamburguerMenu.svg" alt="Icon Hamburguer Menu">
-                    </a>
+                    </button>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="homeID">
             <div class="homeText">
-                <P class="homeTitle">
-                    <strong>SEU ESCRITÓRIO ONLINE</strong> CONTROLE E AGENDE
-                    SEU EXAME EM TODO O BRASIL
-                </P>
+                <h1 class="homeTitle">
+                    <strong>SEU ESCRITÓRIO ONLINE</strong> CONTROLE E AGENDE SEU EXAME EM TODO O BRASIL
+                </h1>
                 <p class="homeSubtitle">
                     A solução completa e definitiva para a gestão global de SST!.
                 </p>
@@ -133,14 +134,12 @@
 
         <section class="about">
             <div class="aboutText">
-                <h2>Por que as empresas têm obrigação de ter <strong>ppr e pcmso</strong></h2>
-                <p>As empresas sempre tiveram a obrigação de implementar o <strong> PPR (Programa de Prevenção de
-                        Riscos)</strong> e o
-                    <strong> PCMSO (Programa de Controle Médico de Saúde Ocupacional)</strong> para garantir a segurança
-                    e a saúde dos
-                    trabalhadores, correndo o risco de multas e interdições caso não cumprissem essas normas. No
-                    entanto, a fiscalização do Ministério do Trabalho pode não alcançar todos os aspectos em todas as
-                    milhões de empresas brasileiras.
+                <h2>Por que as empresas têm obrigação de ter <strong>PPR e PCMSO</strong></h2>
+                <p>As empresas sempre tiveram a obrigação de implementar o <strong>PPR (Programa de Prevenção de
+                        Riscos)</strong> e o <strong>PCMSO (Programa de Controle Médico de Saúde Ocupacional)</strong>
+                    para garantir a segurança e a saúde dos trabalhadores, correndo o risco de multas e interdições caso
+                    não cumprissem essas normas. No entanto, a fiscalização do Ministério do Trabalho pode não alcançar
+                    todos os aspectos em todas as milhões de empresas brasileiras.
                     Com o eSocial, a partir de janeiro de 2018, essa fiscalização se tornou mais rigorosa: além das
                     informações tradicionais, os dados de Segurança do Trabalho provenientes do PPR e do PCMSO passaram
                     a ser obrigatórios, com multas automáticas para o descumprimento.
@@ -151,44 +150,40 @@
             <div id="aboutCardContainer"></div>
         </section>
 
-        <section class="functionalities">
+        <section class="functionalities" id="functionalitiesID">
             <div class="functioTitle">
                 <h2>Funcionalidades e Diferenciais</h2>
             </div>
             <div id="functionalitiesSection"></div>
         </section>
 
-        <section class="plataformaSection">
+        <section class="plataformaSection" id="pricesID">
             <div class="plataformContent">
-                <h2>USO DA
-                    PLATAFORMA ASO ONLINE</h2>
+                <h2>USO DA PLATAFORMA ASO ONLINE</h2>
                 <p>O ASO ONLINE se adapta as suas necessidades. Adquira já sua permissão de acesso a plataforma e comece
                     a usufruir de sua tecnologia.</p>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
+                        <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
                                 Pacote de PPR e PCMSO Standard Tradicional
                             </button>
-                        </h2>
+                        </h3>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample" style="">
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>Valores a Consultar</p>
                                 <ul>
-                                    <li>
-                                        Uso da plataforma por unidade de negócio/filial/estabelecimento
-                                    </li>
+                                    <li>Uso da plataforma por unidade de negócio/filial/estabelecimento</li>
                                     <li>PPR (Programa de Prevenção de Riscos)</li>
                                     <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional)</li>
                                     <li>Consultoria de segurança e acidentes por meio eletrônico</li>
-                                    <li><del>Treinamento de CIPA (Comissão Interna de Prevenção de Acidentes)
-                                        </del></li>
+                                    <li><del>Treinamento de CIPA (Comissão Interna de Prevenção de Acidentes)</del></li>
                                     <li><del>Controle de ações</del></li>
-                                    <li><del> Relatório de situação de segurança </del></li>
-                                    <li><del>Laudo de aposentadoria especial </del> </li>
+                                    <li><del>Relatório de situação de segurança</del></li>
+                                    <li><del>Laudo de aposentadoria especial</del></li>
                                 </ul>
                                 <p>Itens Inclusos</p>
                                 <ul>
@@ -196,9 +191,7 @@
                                     <li>Análise de ambiente "online"</li>
                                     <li>Consultoria por chat e e-mail</li>
                                     <li>Documentos em formato PDF</li>
-                                    <li><del>
-                                            Disponibilidade de cursos "online" com emissão de certificado</del>
-                                    </li>
+                                    <li><del>Disponibilidade de cursos "online" com emissão de certificado</del></li>
                                     <li><del>01 login de acesso</del></li>
                                     <li><del>Hospedagem de dados</del></li>
                                 </ul>
@@ -206,27 +199,26 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
+                        <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                                Pacote de PPR e PCMSO Plus </button>
-                        </h2>
+                                Pacote de PPR e PCMSO Plus
+                            </button>
+                        </h3>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample" style="">
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>Valores a Consultar</p>
                                 <ul>
-                                    <li>
-                                        Uso da plataforma por unidade de negócio/filial/estabelecimento
-                                    </li>
+                                    <li>Uso da plataforma por unidade de negócio/filial/estabelecimento</li>
                                     <li>PPR (Programa de Prevenção de Riscos)</li>
                                     <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional)</li>
                                     <li>Consultoria de segurança e acidentes por meio eletrônico</li>
                                     <li>Treinamento de CIPA (Comissão Interna de Prevenção de Acidentes)</li>
-                                    <li> Controle de ações </li>
-                                    <li> Relatório de situação de segurança </li>
-                                    <li><del>Laudo de aposentadoria especial </del> </li>
+                                    <li>Controle de ações</li>
+                                    <li>Relatório de situação de segurança</li>
+                                    <li><del>Laudo de aposentadoria especial</del></li>
                                 </ul>
                                 <p>Itens Inclusos</p>
                                 <ul>
@@ -234,9 +226,7 @@
                                     <li>Análise de ambiente "online"</li>
                                     <li>Consultoria por chat e e-mail</li>
                                     <li>Documentos em formato PDF</li>
-                                    <li>
-                                        Disponibilidade de cursos "online" com emissão de certificado
-                                    </li>
+                                    <li>Disponibilidade de cursos "online" com emissão de certificado</li>
                                     <li><del>01 login de acesso</del></li>
                                     <li><del>Hospedagem de dados</del></li>
                                 </ul>
@@ -244,29 +234,26 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
+                        <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
                                 Pacote de PPR e PCMSO Premium
                             </button>
-                        </h2>
+                        </h3>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample" style="">
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>Valores a Consultar</p>
                                 <ul>
-                                    <li>
-                                        Uso da plataforma por unidade de negócio/filial/estabelecimento
-                                    </li>
+                                    <li>Uso da plataforma por unidade de negócio/filial/estabelecimento</li>
                                     <li>PPR (Programa de Prevenção de Riscos)</li>
                                     <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional)</li>
                                     <li>Consultoria de segurança e acidentes por meio eletrônico</li>
-                                    <li>Treinamento de CIPA (Comissão Interna de Prevenção de Acidentes)
-                                    </li>
+                                    <li>Treinamento de CIPA (Comissão Interna de Prevenção de Acidentes)</li>
                                     <li>Controle de ações</li>
-                                    <li> Relatório de situação de segurança </li>
-                                    <li>Laudo de aposentadoria especial </li>
+                                    <li>Relatório de situação de segurança</li>
+                                    <li>Laudo de aposentadoria especial</li>
                                 </ul>
                                 <p>Itens Inclusos</p>
                                 <ul>
@@ -274,9 +261,7 @@
                                     <li>Análise de ambiente "online"</li>
                                     <li>Consultoria por chat e e-mail</li>
                                     <li>Documentos em formato PDF</li>
-                                    <li>
-                                        Disponibilidade de cursos "online" com emissão de certificado
-                                    </li>
+                                    <li>Disponibilidade de cursos "online" com emissão de certificado</li>
                                     <li>01 login de acesso</li>
                                     <li>Hospedagem de dados</li>
                                 </ul>
@@ -286,24 +271,36 @@
                 </div>
             </div>
             <div class="image">
-                <img src="./assets/IMGS/mockup_why.png" alt="">
+                <img src="./assets/IMGS/mockup_why.png" alt="Mockup ilustrando o uso da plataforma ASO ONLINE">
             </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="footerText" id="contactID">
+            <span>CONTATO</span>
+            <h2>Respondemos suas perguntas</h2>
+            <p>Entre em contato conosco para quaisquer esclarecimentos</p>
+        </div>
+        <div class="form">
+            <form action="/submit" method="POST">
+                <div class="nameEmail">
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="messageSub">
+                    <textarea id="message" name="message" rows="5" placeholder="Mensagem" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <a href="#" id="topBtn" class="top"></a>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>
-
-</section>
-
-</main>
-
-<footer></footer>
-<a href="#" id="topBtn" class="top"></a>
-<script src="./index.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-<!-- SCRIPT -->
 
 </html>
