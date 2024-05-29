@@ -141,7 +141,7 @@ const functionalitiesCards = [
   {
     icon: `fa-solid fa-magnifying-glass`,
     title: `Personalização para suas Necessidades`,
-    text: `>Acompanhe o que precisar com perfis de usuários personalizados, adaptados às necessidades de cada
+    text: `Acompanhe o que precisar com perfis de usuários personalizados, adaptados às necessidades de cada
     um. Garantimos que apenas as informações relevantes serão exibidas para cada usuário,
     proporcionando uma experiência sob medida.`,
   },
@@ -201,5 +201,10 @@ functionalitiesCards.forEach((data) => {
   functionalitiesSection.appendChild(functionalitiesCards);
 });
 
-/* SECTION PLATAFORMA */
+/* SECTION FORM */
 
+function handleRecaptcha() {
+  let button = document.getElementById("submitButton");
+  button.disabled = false;
+  button.classList.remove("disabled");
+}

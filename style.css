@@ -333,6 +333,11 @@ nav li:first-child {
 }
 
 /* Functionalities Section */
+
+.functionalities {
+    background: #e7e7e79c;
+}
+
 .functioTitle h2 {
     text-transform: uppercase;
     font-size: 36px;
@@ -355,7 +360,7 @@ nav li:first-child {
     width: 380px;
     padding: 30px 35px 65px;
     text-align: center;
-    background: #e7e7e79c;
+    background: #cccccc80;
 }
 
 .functionalitiesCards i {
@@ -403,87 +408,133 @@ nav li:first-child {
     box-shadow: none !important;
 }
 
+
+/* SECTION FORMS */
+
+#formsContato {
+    background: #e7e7e79c;
+    margin-bottom: -30px;
+}
+
+.formContainer {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.formText {
+    padding: 50px 0 10px;
+    text-align: center;
+}
+
+.formTextTilte {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formTextParagraph {
+    line-height: 2;
+}
+
+
+.formField label {
+    font-size: 18px;
+    color: #000;
+}
+
+.formField input, .formField textarea {
+    margin: 10px 0 25px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: #000;
+    border: 1px solid #7b7b7b;
+    font-size: 14px;
+}
+
+.buttonSubmitFormsDIV {
+    padding: 0 0 50px;
+}
+
+.buttonSubmitForms {
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 13px;
+    background: rgb(79, 210, 194);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.g-recaptcha {
+    margin: 10px 0;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
 /* FOOTER */
 
+
 footer {
-    background: rgb(79, 210, 194);
-    padding: 50px 75px;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background: #4fd2c2;
+    padding: 25px;
 }
 
-.footerText {
-    width: 600px;
+.footer-container {
+    align-items: center;
     color: #fff;
-}
-
-.footerText span {
-    font-size: 13px;
-}
-
-.footerText h2 {
-    margin: 5px 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    width: 400px;
-}
-
-.footer p {
-    font-size: 17px;
-}
-
-form {
     display: flex;
-    gap: 50px;
-    align-items: stretch;
-    justify-content: center;
+    margin: 10px 0;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.nameEmail {
+.footer-content {
+    width: 50%;
+}
+
+.footer-content img {
+    width: 100px;
+}
+
+.footer-content p {
+    margin: 10px;
+}
+
+.footer-content1 p {
+    margin: 3px;
+}
+
+.bottom-footer {
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+}
+
+.socialMedias {
     display: flex;
-    flex-direction: column;
+    font-size: 30px;
     gap: 50px;
+    justify-content: center;
+    margin: 10px;
 }
 
-input {
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    width: 250px;
-    outline: none;
+.bottom-footer a, .span-footer, .footer-content1 a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.messageSub {
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    flex-direction: column;
+.span-footer:hover, .footer-content1 a:hover {
+    border-bottom: solid 1px #fff;
 }
 
-.messageSub textarea {
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    width: 300px;
-    outline: none;
+.footer-content1 a {
+    margin: 10px;
 }
 
-.messageSub button {
-    z-index: 1;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-
-.messageSub button:hover {
-    opacity: 0.8;
-}
 
 /* Media Queries */
 @media (max-width: 1300px) {
@@ -511,20 +562,6 @@ input {
         border-radius: 0;
     }
 }
-
-@media (max-width: 1290px) {
-    /* FOOTER */
-
-    footer {
-        gap: 10px;
-    }
-
-    .footerText h2 {
-        width: 100%;
-    }
-
-}
-
 
 @media (max-width: 1050px) {
     nav {
@@ -584,19 +621,45 @@ input {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .nameEmail, .messageSub, .nameEmail input, .messageSub textarea {
-        width: 100%;
-    }
-
-    .messageSub button {
-        margin: auto;
-    }
-
     .image img {
         width: 100%;
     }
 
 }
+
+@media (max-width:900px) {
+
+    /* FOOTER */
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-content p {
+        width: 100%;
+    }
+
+    .footer-content1 {
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    /* FOOTER  */
+
+    .footerContainer {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .footerContainer .infos {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 720px) {
     #aboutCardSearch, #aboutCardSearch img {
@@ -611,6 +674,7 @@ input {
         border-radius: 0 0 10px 10px;
     }
 }
+
 
 @media (max-width: 600px) {
     nav {
@@ -652,13 +716,4 @@ input {
     .functionalitiesCards {
         height: 400px;
     }
-
-    footer {
-        padding: 50px 25px;
-    }
-
-    .messageSub button {
-        margin: 20px auto;
-    }
-
 }
