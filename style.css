@@ -7,6 +7,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+ul {
+    padding-left: 1rem !important;
+}
+
 /* Scroll Button */
 .top {
     --offset: 50px;
@@ -298,7 +302,6 @@ nav li:first-child {
 
 .aboutCardList {
     color: #fff;
-    margin: 0 0 0 15px;
     font-size: 15px;
 }
 
@@ -579,7 +582,7 @@ footer {
 
     .home {
         flex-direction: column;
-        padding: 20px 0 0;
+        padding: 20px 0 20px 0px;
     }
 
     .homeText {
@@ -700,7 +703,7 @@ footer {
 
 @media (max-width:490px) {
     .aboutCardContent {
-        padding: 15px 0;
+        paddinng: 15px 5px 0 5px;
     }
 
     .aboutCardList {
